@@ -1,0 +1,107 @@
+{
+  "features": [
+    "ret1",
+    "ret3",
+    "ret5",
+    "ret10",
+    "ret20",
+    "rsi",
+    "macd",
+    "macd_sig",
+    "bb_up_dist",
+    "bb_low_dist",
+    "bb_mid_dist",
+    "atr_rel",
+    "stoch_k",
+    "stoch_d",
+    "adx",
+    "di_diff",
+    "cci",
+    "range_atr",
+    "body_range",
+    "hour_sin",
+    "hour_cos",
+    "h4_rsi",
+    "h4_atr_rel",
+    "h4_adx",
+    "h4_ret1",
+    "h4_bb_mid_dist",
+    "d1_rsi",
+    "d1_atr_rel",
+    "d1_adx",
+    "d1_ret1"
+  ],
+  "n_features": 30,
+  "classes": [
+    0,
+    1
+  ],
+  "positive_index": 1,
+  "model": "xgb",
+  "hidden": null,
+  "threshold": 0.55,
+  "seed": 42,
+  "source_csv": "features_EURUSD_PERIOD_M15.csv",
+  "rows": 19969,
+  "trained_at": "2026-11-19T17:23:39",
+  "cv_scores": [
+    {
+      "fold": 1,
+      "n_train": 2809,
+      "n_val": 2828,
+      "accuracy": 0.646393,
+      "roc_auc": 0.699706
+    },
+    {
+      "fold": 2,
+      "n_train": 5637,
+      "n_val": 2828,
+      "accuracy": 0.664074,
+      "roc_auc": 0.731231
+    },
+    {
+      "fold": 3,
+      "n_train": 8465,
+      "n_val": 2828,
+      "accuracy": 0.672914,
+      "roc_auc": 0.730035
+    },
+    {
+      "fold": 4,
+      "n_train": 11293,
+      "n_val": 2828,
+      "accuracy": 0.6814,
+      "roc_auc": 0.751543
+    },
+    {
+      "fold": 5,
+      "n_train": 14121,
+      "n_val": 2828,
+      "accuracy": 0.704031,
+      "roc_auc": 0.7745
+    }
+  ],
+  "cv_mean_auc": 0.737403,
+  "cv_std_auc": 0.024858,
+  "metrics": {
+    "test": {
+      "n": 2996,
+      "accuracy": 0.6959279038718291,
+      "log_loss": 0.5821956891852205,
+      "confusion": [
+        [
+          1209,
+          382
+        ],
+        [
+          529,
+          876
+        ]
+      ],
+      "roc_auc": 0.7609064332063588,
+      "confident_coverage": 0.8744993324432577,
+      "confident_accuracy": 0.7198473282442748
+    }
+  },
+  "onnx_exported": true
+}

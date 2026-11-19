@@ -1,0 +1,1 @@
+# MaxOut dashboard package

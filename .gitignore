@@ -1,0 +1,26 @@
+# MetaEditor build artifacts
+*.ex5
+*.ex4
+*.exp
+
+# Logs
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Regenerable datasets
+data/*.csv
+
+# Dashboard runtime
+Models/live_status.json
+Models/runs/
+web/frontend/node_modules/
+web/frontend/dist/
+
+# OS noise
+Thumbs.db
+desktop.ini
